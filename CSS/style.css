@@ -1,0 +1,510 @@
+@font-face {
+    font-family: Poppins;
+    src: url("/public//assets/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url("/public//assets/fonts//Poppins-SemiBold.ttf");
+}
+
+ :root {
+    --bg-black-900: #f3f3fc;
+    --bg-black-100: #fdf9ff;
+    --bg-black-50: #e8dfec;
+    --text-black-900: #302e4d;
+    --text-black-700: #504e70;
+}
+
+body.dark {
+    --bg-black-900: #151515;
+    --bg-black-100: #222222;
+    --bg-black-50: #393939;
+    --text-black-900: #ffffff;
+    --text-black-700: #e9e9e9;
+}
+
+body {
+    background-color: rgb(155, 196, 196);
+}
+
+
+/* 
+* {
+margin: 0;
+padding: 0;
+outline: none;
+text-decoration: none;
+box-sizing: border-box;
+}
+
+::before,
+::after {
+box-sizing: border-box;
+} */
+
+
+/* main full card */
+
+.main {
+    position: fixed;
+    background-color: var(--bg-black-900);
+    /* background-color: white; */
+    left: 50%;
+    top: 50%;
+    height: 550px;
+    width: 1000px;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px 0 var(--bg-black-100);
+    display: flex;
+    z-index: -1;
+}
+
+
+/* Contact information on the left side  */
+
+.contact-container {
+    height: 100%;
+    background-color: rgb(0, 178, 178);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 340px;
+    position: absolute;
+    z-index: 0;
+}
+
+.contact-info {
+    height: 100%;
+    display: flex;
+    align-items: end;
+}
+
+.contact {
+    margin-bottom: 70px;
+    width: 100%;
+}
+
+.email-phone {
+    margin-left: 40px;
+}
+
+.email {
+    margin-bottom: 10px;
+    /* color: var(--text-black-900);
+font-weight: 900; */
+    color: white;
+    font-family: Poppins-Bold;
+    display: flex;
+}
+
+.email-img {
+    font-size: 15px;
+    margin-right: 6px;
+}
+
+.email-add {
+    margin-top: 0;
+    margin-bottom: 30px;
+    /* color: var(--text-black-700);
+font-weight: 400; */
+    color: white;
+    font-family: Poppins;
+    font-size: 14px;
+}
+
+.phone {
+    margin-bottom: 10px;
+    /* color: var(--text-black-900);
+font-weight: 900; */
+    color: white;
+    font-size: medium;
+    font-family: Poppins-Bold;
+    display: flex;
+}
+
+.phone-img {
+    font-size: 15px;
+    margin-right: 6px;
+}
+
+.phone-num {
+    margin-top: 0px;
+    /* color: var(--text-black-700);
+font-weight: 400; */
+    color: white;
+    font-family: Poppins;
+    font-size: 14px;
+}
+
+.split-bar {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    height: 15px;
+    /* background-color: lightgray; */
+    background-color: var(--bg-black-50);
+}
+
+.find-me {
+    color: white;
+    margin-bottom: 10px;
+    font-family: Poppins-Bold;
+}
+
+.find-me-links {
+    margin-left: 40px;
+}
+
+.social-container {
+    display: flex;
+}
+
+.btn {
+    margin-right: 15px;
+}
+
+.btn:hover img {
+    transform: scale(1.2);
+}
+
+.btn {
+    background-color: transparent;
+    border: 0;
+}
+
+
+/* user image */
+
+.img-container {
+    position: absolute;
+    top: 30px;
+    left: 260px;
+    height: 445px;
+    width: 300px;
+    z-index: 2;
+}
+
+.user-img {
+    width: 100%;
+    height: 100%;
+}
+
+.fade-in {
+    animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* User's righit side information */
+
+.info-container {
+    font-family: Poppins;
+    margin: 70px 20px 0px 590px;
+}
+
+.name {
+    font-family: Poppins-Bold;
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: var(--text-black-700);
+    font-weight: 900;
+}
+
+.tony {
+    color: rgb(0, 178, 178);
+    margin-bottom: -15px;
+    font-weight: 900;
+}
+
+.title-location {
+    font-family: Poppins-Bold;
+    color: var(--text-black-900);
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.skills {
+    color: var(--text-black-700);
+    margin-right: 40px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.technologies {
+    margin-top: 20px;
+}
+
+.tech-title {
+    font-family: Poppins-Bold;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: var(--text-black-900);
+    font-weight: 900;
+}
+
+ul {
+    font-size: 13px;
+    padding-left: 25px;
+    color: var(--text-black-700);
+    font-weight: 500;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+
+/* Shapes */
+
+.square {
+    position: absolute;
+    left: 230px;
+    top: 70px;
+    height: 50px;
+    width: 50px;
+    /* background-color: lightgray; */
+    background-color: var(--bg-black-50);
+    z-index: 3;
+    animation: moveLeftToPosition 3s ease-in-out forwards;
+}
+
+@keyframes moveLeftToPosition {
+    0% {
+        left: 180px;
+        /* Initial position */
+    }
+    100% {
+        left: 230px;
+        /* Move to the desired position */
+    }
+}
+
+.rectangle {
+    position: absolute;
+    left: 540px;
+    top: 50px;
+    height: 20px;
+    width: 50px;
+    /* background-color: lightgray; */
+    background-color: var(--bg-black-50);
+    z-index: 3;
+}
+
+.square-two {
+    position: absolute;
+    left: 313px;
+    top: 450px;
+    height: 50px;
+    width: 50px;
+    /* background-color: lightgray; */
+    background-color: var(--bg-black-50);
+    z-index: 3;
+}
+
+.circle {
+    position: absolute;
+    background-color: rgb(0, 178, 178);
+    left: 535px;
+    top: 450px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    z-index: 1;
+    animation: moveUp 3s ease-in-out forwards;
+}
+
+@keyframes moveUp {
+    0% {
+        top: 550px;
+        /* Initial position */
+    }
+    100% {
+        top: 450px;
+        /* Move upwards to the desired position */
+    }
+}
+
+.corner-circle {
+    position: absolute;
+    background-color: rgb(0, 178, 178);
+    right: 0px;
+    top: 0px;
+    height: 70px;
+    width: 70px;
+    border-radius: 0 20px 0 70px;
+    z-index: -5;
+    animation: fadeInAndMoveDown 3s ease-in-out forwards;
+}
+
+@keyframes fadeInAndMoveDown {
+    0% {
+        opacity: 0;
+        top: -70px;
+    }
+    100% {
+        opacity: 1;
+        top: 0px;
+    }
+}
+
+
+/* Footer info */
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer a {
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.footer span {
+    font-size: 14px;
+}
+
+
+/* style switcher Start  */
+
+.style-switcher {
+    position: fixed;
+    right: -2px;
+    top: -32px;
+    border: 1px solid var(--bg-black-50);
+    border-radius: 5px;
+    background-color: var(--bg-black-100);
+    z-index: 101;
+}
+
+.style-switcher .s-icon {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    font-size: 20px;
+    background: var(--bg-black-100);
+    color: var(--text-black-900);
+    right: 100%;
+    border: 1px solid var(--bg-black-50);
+    margin-right: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+}
+
+.style-switcher .s-icon i {
+    line-height: 40px;
+}
+
+.style-switcher .style-switcher-toggler {
+    top: 0;
+}
+
+.style-switcher .day-night {
+    top: 55px;
+}
+
+
+/* For smaller screens */
+
+@media (max-width: 1150px) {
+    .main {
+        height: 400px;
+        width: 780px;
+    }
+    .contact-container {
+        width: 285px;
+    }
+    .contact {
+        margin-bottom: 35px;
+    }
+    .img-container {
+        position: absolute;
+        top: 60px;
+        left: 240px;
+        height: 295px;
+        width: 200px;
+    }
+    .email {
+        font-size: 13px;
+    }
+    .email-add {
+        font-size: 13px;
+    }
+    .phone {
+        font-size: 13px;
+    }
+    .phone-num {
+        font-size: 13px;
+    }
+    .find-me {
+        font-size: 13px;
+    }
+    .info-container {
+        margin: 70px 20px 0px 460px;
+    }
+    .name {
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+    .title-location {
+        margin-bottom: 5px;
+    }
+    .skills {
+        margin-right: 10px;
+        font-size: 11px;
+    }
+    .technologies {
+        margin-top: 10px;
+    }
+    .tech-title {
+        margin-bottom: 5px;
+    }
+    ul {
+        font-size: 11px;
+    }
+    .square {
+        left: 225px;
+        top: 80px;
+        height: 30px;
+        width: 30px;
+    }
+    .rectangle {
+        left: 425px;
+        top: 75px;
+        height: 15px;
+        width: 30px;
+    }
+    .square-two {
+        left: 270px;
+        top: 340px;
+        height: 30px;
+        width: 30px;
+    }
+    .circle {
+        left: 420px;
+        top: 335px;
+        height: 40px;
+        width: 40px;
+    }
+    .corner-circle {
+        height: 60px;
+        width: 60px;
+        border-radius: 0 20px 0 60px;
+    }
+}
